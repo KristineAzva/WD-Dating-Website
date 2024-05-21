@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="ageverification.css">
+<title>Age Verification</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Age Verification</h1>
+        <p>Please enter your age to verify:</p>
+        <input class="input-field" type="number" id="age" name="age" placeholder="Enter your age">
+        <button class="btn" onclick="verifyAge()">Verify</button>
+    </div>
+
+<script>
+function verifyAge() {
+    var age = document.getElementById("age").value;
+
+    if (age >= 18) {
+        window.location.href = "loginpage.html";
+    } else {
+        alert("Sorry, you must be at least 18 years old to access this content.");
+    }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ</title>
+    <link rel="stylesheet" href="FAQ.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+          <div class="container">
+            <img src="image/logo2.png" alt="TropaTime">
+            <ul class="nav-links">
+              <li><a href="loginpage.html">Home</a></li>
+              <li class="dropdown"><a href="#" class="dropbtn">Find &#9660;</a>
+                <div class="dropdown-content">
+                  <a href="bebetime.html">BebeTime</a>
+                  <a href="tropatime.html">TropaTime</a>
+                </div></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="FAQ.html">FAQ</a></li>
+            </ul>
+          </div>
+        </nav>
+  </header>
+    <div class="wrapper">
+      <p>TropaTime</p>
+      <h1>Frequently Asked Questions</h1>
+
+      <div class="faq">
+        <button class="accordion">
+          What makes your dating website unique?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            <br>Our dating website offers a personalized matchmaking experience, utilizing advanced algorithms to suggest compatible matches based on users' preferences and interests. Additionally, we prioritize user safety and privacy, ensuring a secure environment for meaningful connections to flourish.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          How can I maximize my chances of finding a compatible match?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            <br>To increase your chances of finding a compatible match, we recommend filling out your profile thoroughly and accurately. This includes providing detailed information about yourself and your interests, as well as uploading high-quality photos. Additionally, actively engaging with the platform by browsing matches, sending messages, and participating in our interactive features can help you connect with like-minded individuals.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          Is my personal information safe on your website?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            <br>Yes, safeguarding our users' personal information is a top priority for us. We employ industry-standard security measures to protect user data from unauthorized access, misuse, or disclosure. Furthermore, we adhere to strict privacy policies and never share or sell user data to third parties without explicit consent.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          How do I report suspicious or inappropriate behavior?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            <br>If you encounter any suspicious or inappropriate behavior on our platform, we encourage you to report it immediately using our built-in reporting feature. Our dedicated team reviews all reports promptly and takes appropriate action to maintain a safe and respectful community environment. Your safety and comfort are our utmost concern.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          Do you offer customer support for any issues or inquiries?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            <br>Absolutely! We provide comprehensive customer support to address any issues or inquiries you may have. Whether you need assistance with account-related matters, technical issues, or general questions about our services, our support team is here to help. You can reach out to us through our contact page, and we'll strive to resolve your concerns promptly and efficiently.
+          </p>
+        </div>
+      </div>
+
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          this.parentElement.classList.toggle("active");
+
+          var pannel = this.nextElementSibling;
+
+          if (pannel.style.display === "block") {
+            pannel.style.display = "none";
+          } else {
+            pannel.style.display = "block";
+          }
+        });
+      }
+    </script>
+  </body>
+  <footer class="footer">
+    <div class="footcontainer">
+      <p>&copy; 2024 TropaTime. All rights reserved.</p>
+    </div>
+  </footer>
+</html>

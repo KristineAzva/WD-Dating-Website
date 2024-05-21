@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ 
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="notification.css" />
+    <title>Notifications</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="notif_box">
+          <h2 class="title">Notifications</h2>
+          <span id="notifes"></span>
+        </div>
+        <p id="mark_all">Mark all as read</p>
+      </header>
+      <main>
+        <div class="notif_card unread">
+          <img src="images/friend3.jpg" alt="avatar" />
+          <div class="description">
+            <p class="user_activity">
+              <strong>Rosal Salcedo</strong> sent you a friend request.
+            </p>
+            <p class="time">1 day ago</p>
+          </div>
+        </div>
+        <div class="notif_card unread">
+          <img src="images/friend2.jpg" alt="avatar" />
+          <div class="description">
+            <p class="user_activity">
+              <strong>Polinne Rabina Montemayor</strong> poked you
+            </p>
+            <p class="time">3 days ago</p>
+          </div>
+        </div>
+        <div class="notif_card unread">
+          <img src="images/friend1.jpg" alt="avatar" />
+          <div class="description">
+            <p class="user_activity">
+              <strong>Kristine Joy Mallanao</strong> posted an album
+              <strong class="link">Solid BSG!!!</strong>
+            </p>
+            <p class="time">3 days ago</p>
+          </div>
+        </div>
+        <div>
+          <div class="notif_card">
+          <div class="message_card">
+            <img
+            src="images/friend2.jpg"
+            alt="avatar"
+          />
+          <div class="description">
+            <p class="user_activity">
+              <strong>Polinne Rabina Montemayor</strong> sent you a private message
+            </p>
+            <p class="time">5 days ago</p>
+          </div>
+          </div>
+        </div>
+        <div class="message">
+              <p>
+                Hi Jiroh! Pasend naman ako ng files na nasa flashdrive ni Kristine.
+              </p>
+            </div>
+        </div>
+        
+        <div class="notif_card">
+          <img src="images/user.jpg" alt="avatar" />
+          <div class="description">
+            <p class="user_activity">
+              <strong>You</strong> joined a group
+              <strong class="link">BSG</strong>
+            </p>
+            <p class="time">6 days ago</p>
+          </div>
+          <img src="images/group1.jpg" class="chess_img" alt="chess" />
+        </div>
+        <div class="notif_card">
+          <img src="images/friend2.jpg" alt="avatar" />
+          <div class="description">
+            <p class="user_activity">
+              <strong>Polinne Rabina Montemayor</strong> accepted your friend request.
+            </p>
+            <p class="time">8 days ago</p>
+          </div>
+        </div>
+        <div class="notif_card">
+          <img src="images/friend1.jpg" alt="avatar" />
+          <div class="description">
+            <p class="user_activity">
+              <strong>Kristine Joy Mallanao</strong> sent you a friend request.
+            </p>
+            <p class="time">8 days ago</p>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
